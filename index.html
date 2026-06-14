@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Ambica Gold — Fine Indian Jewellery Since 1989</title>
+  <meta name="description" content="Ambica Jewellers — A legacy of fine Indian jewellery craftsmanship since 1989. Explore our exquisite collection of necklaces, bangles, earrings, rings and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-emblem">
+      <div class="loader-ring"></div>
+      <span class="loader-initials">AJ</span>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <span class="est-badge">Est. 1989</span>
+      </div>
+      <div class="logo">
+        <a href="#home">
+          <span class="logo-main"> Shree Ambica</span>
+          <span class="logo-sub">Gold</span>
+        </a>
+      </div>
+      <nav class="nav-right">
+        <a href="#collection">Collection</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Visit Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#collection" onclick="closeMobileNav()">Collection</a>
+      <a href="#about" onclick="closeMobileNav()">Our Story</a>
+      <a href="#contact" onclick="closeMobileNav()">Visit Us</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">A Legacy of Elegance</p>
+      <h1 class="hero-title">
+        Where Gold<br />
+        <em>Tells Stories</em>
+      </h1>
+      <p class="hero-tagline">Trusted Today, Treasured Forever.<br/>Since 1989.</p>
+      <a href="#collection" class="btn-primary">Explore Collection</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE STRIP ── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Necklaces</span><span class="sep">✦</span>
+      <span>Bangles</span><span class="sep">✦</span>
+      <span>Earrings</span><span class="sep">✦</span>
+      <span>Rings</span><span class="sep">✦</span>
+      <span>Bridal Sets</span><span class="sep">✦</span>
+      <span>Maang Tikka</span><span class="sep">✦</span>
+      <span>Necklaces</span><span class="sep">✦</span>
+      <span>Bangles</span><span class="sep">✦</span>
+      <span>Earrings</span><span class="sep">✦</span>
+      <span>Rings</span><span class="sep">✦</span>
+      <span>Bridal Sets</span><span class="sep">✦</span>
+      <span>Maang Tikka</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ── COLLECTION ── -->
+  <section id="collection" class="collection-section">
+    <div class="section-header">
+      <p class="section-eyebrow">Our Craftsmanship</p>
+      <h2 class="section-title">The Collection</h2>
+      <div class="title-ornament">✦</div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+      <button class="filter-btn" data-filter="earrings">Earrings</button>
+      <button class="filter-btn" data-filter="bangles">Bangles</button>
+      <button class="filter-btn" data-filter="rings">Rings</button>
+      <button class="filter-btn" data-filter="sets">Bridal Sets</button>
+      <button class="filter-btn" data-filter="maang-tikka">Maang Tikka</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- NECKLACES -->
+      <div class="gallery-item" data-category="necklaces">
+        <div class="gallery-img-wrap">
+          <img src="images/necklaces/necklace-01.jpg" alt="Gold Kundan Necklace" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Necklaces</span>
+            <span class="item-name">Kundan Necklace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="necklaces">
+        <div class="gallery-img-wrap">
+          <img src="images/necklaces/necklace-02.jpg" alt="Temple Gold Necklace" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Necklaces</span>
+            <span class="item-name">Temple Necklace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="necklaces">
+        <div class="gallery-img-wrap">
+          <img src="images/necklaces/necklace-03.jpg" alt="Bridal Polki Necklace" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Necklaces</span>
+            <span class="item-name">Polki Necklace</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EARRINGS -->
+      <div class="gallery-item" data-category="earrings">
+        <div class="gallery-img-wrap">
+          <img src="images/earrings/earring-01.jpg" alt="Jhumka Earrings" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Earrings</span>
+            <span class="item-name">Jhumka Earrings</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="earrings">
+        <div class="gallery-img-wrap">
+          <img src="images/earrings/earring-02.jpg" alt="Chandbali Earrings" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Earrings</span>
+            <span class="item-name">Chandbali</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="earrings">
+        <div class="gallery-img-wrap">
+          <img src="images/earrings/earring-03.jpg" alt="Polki Drop Earrings" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Earrings</span>
+            <span class="item-name">Polki Drops</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BANGLES -->
+      <div class="gallery-item" data-category="bangles">
+        <div class="gallery-img-wrap">
+          <img src="images/bangles/bangle-01.jpg" alt="Gold Kada Bangles" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bangles</span>
+            <span class="item-name">Gold Kada</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="bangles">
+        <div class="gallery-img-wrap">
+          <img src="images/bangles/bangle-02.jpg" alt="Stone Studded Bangles" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bangles</span>
+            <span class="item-name">Stone Bangles</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="bangles">
+        <div class="gallery-img-wrap">
+          <img src="images/bangles/bangle-03.jpg" alt="Meenakari Bangles" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bangles</span>
+            <span class="item-name">Meenakari Bangles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RINGS -->
+      <div class="gallery-item" data-category="rings">
+        <div class="gallery-img-wrap">
+          <img src="images/rings/ring-01.jpg" alt="Diamond Gold Ring" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Rings</span>
+            <span class="item-name">Diamond Ring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="rings">
+        <div class="gallery-img-wrap">
+          <img src="images/rings/ring-02.jpg" alt="Kundan Ring" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Rings</span>
+            <span class="item-name">Kundan Ring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="rings">
+        <div class="gallery-img-wrap">
+          <img src="images/rings/ring-03.jpg" alt="Cocktail Ring" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Rings</span>
+            <span class="item-name">Cocktail Ring</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETS -->
+      <div class="gallery-item" data-category="sets">
+        <div class="gallery-img-wrap">
+          <img src="images/sets/set-01.jpg" alt="Bridal Jewellery Set" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bridal Sets</span>
+            <span class="item-name">Bridal Gold Set</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="sets">
+        <div class="gallery-img-wrap">
+          <img src="images/sets/set-02.jpg" alt="Kundan Bridal Set" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bridal Sets</span>
+            <span class="item-name">Kundan Bridal Set</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="sets">
+        <div class="gallery-img-wrap">
+          <img src="images/sets/set-03.jpg" alt="Polki Bridal Set" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Bridal Sets</span>
+            <span class="item-name">Polki Bridal Set</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAANG TIKKA -->
+      <div class="gallery-item" data-category="maang-tikka">
+        <div class="gallery-img-wrap">
+          <img src="images/maang-tikka/tikka-01.jpg" alt="Gold Maang Tikka" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Maang Tikka</span>
+            <span class="item-name">Gold Maang Tikka</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="maang-tikka">
+        <div class="gallery-img-wrap">
+          <img src="images/maang-tikka/tikka-02.jpg" alt="Kundan Maang Tikka" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Maang Tikka</span>
+            <span class="item-name">Kundan Tikka</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="maang-tikka">
+        <div class="gallery-img-wrap">
+          <img src="images/maang-tikka/tikka-03.jpg" alt="Polki Maang Tikka" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+          <div class="gallery-overlay">
+            <span class="item-category">Maang Tikka</span>
+            <span class="item-name">Polki Tikka</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-eyebrow">Our Heritage</p>
+        <h2 class="section-title">A Legacy<br/><em>Since 1989</em></h2>
+        <div class="title-ornament">✦</div>
+        <p>For over three decades, Ambica Jewellers has been a trusted name in fine Indian jewellery. Founded with a passion for timeless craftsmanship, we have adorned generations of women with pieces that carry both beauty and meaning.</p>
+        <p>Every piece in our collection is thoughtfully designed — blending traditional motifs with contemporary sensibilities, using only the finest gold, gemstones, and artisanal techniques passed down through generations.</p>
+        <p>From a bride's first set to a grandmother's daily wear, we craft jewellery that becomes part of your story.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">35+</span>
+            <span class="stat-label">Years of Trust</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10k+</span>
+            <span class="stat-label">Happy Families</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Unique Designs</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-img-frame">
+          <img src="images/about-store.jpg" alt="Ambica Jewellers Store" onerror="this.parentElement.classList.add('img-placeholder-about')" />
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <p class="section-eyebrow">Come Visit Us</p>
+      <h2 class="section-title">Find Us</h2>
+      <div class="title-ornament">✦</div>
+    </div>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>Our Store</h3>
+        <p>GF-8, Vandematram Crosswind, New S.G. Road<br/>Ahmedabad, Gujarat — 382481</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Call or WhatsApp</h3>
+        <p><a href="tel:+918696340454">+91 86963 40454</a></p>
+        <p><a href="https://wa.me/918696340454" target="_blank" rel="noopener" class="whatsapp-link">💬 Chat on WhatsApp</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🕐</div>
+        <h3>Store Hours</h3>
+        <p>Monday – Sunday<br/>10:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-main">Shree Ambica</span>
+        <span class="logo-sub">Gold</span>
+      </div>
+      <p class="footer-tagline">Where Gold Tells Stories — Since 1989</p>
+      <div class="footer-links">
+        <a href="#collection">Collection</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Visit Us</a>
+      </div>
+      <p class="footer-copy">© 2025 Shree Ambica Gold. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightboxClose" class="lightbox-close">✕</span>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="" />
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
